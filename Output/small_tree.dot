@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="CrimeCode <= 415.0\nmse = 268.6\nsamples = 77384\nvalue = 36.1"] ;
+1 [label="CrimeCode <= 250.5\nmse = 253.4\nsamples = 28857\nvalue = 38.8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AreaID <= 1.5\nmse = 234.6\nsamples = 9144\nvalue = 35.7"] ;
+1 -> 2 ;
+3 [label="mse = 221.3\nsamples = 1569\nvalue = 40.8"] ;
+2 -> 3 ;
+4 [label="mse = 230.8\nsamples = 7575\nvalue = 34.6"] ;
+2 -> 4 ;
+5 [label="AreaID <= 7.5\nmse = 255.4\nsamples = 19713\nvalue = 40.3"] ;
+1 -> 5 ;
+6 [label="mse = 247.0\nsamples = 14865\nvalue = 39.2"] ;
+5 -> 6 ;
+7 [label="mse = 266.9\nsamples = 4848\nvalue = 43.6"] ;
+5 -> 7 ;
+8 [label="CrimeCode <= 623.5\nmse = 270.6\nsamples = 48527\nvalue = 34.5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="CrimeCode <= 486.0\nmse = 260.8\nsamples = 17844\nvalue = 29.1"] ;
+8 -> 9 ;
+10 [label="mse = 274.3\nsamples = 12233\nvalue = 34.6"] ;
+9 -> 10 ;
+11 [label="mse = 27.6\nsamples = 5611\nvalue = 17.3"] ;
+9 -> 11 ;
+12 [label="AreaID <= 6.5\nmse = 250.2\nsamples = 30683\nvalue = 37.6"] ;
+8 -> 12 ;
+13 [label="mse = 244.8\nsamples = 22085\nvalue = 36.9"] ;
+12 -> 13 ;
+14 [label="mse = 260.5\nsamples = 8598\nvalue = 39.2"] ;
+12 -> 14 ;
+}
